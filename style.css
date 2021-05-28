@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --very-dark-desaturated-blue-alpha: hsla(229, 23%, 23%, .6);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --dark-gray-alpha: hsl(0, 0%, 59%, .2);
+}
+
+.page {
+    background-color: var(--dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: calc(50% - 489px) -520px, calc(50% + 489px) 375px;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 88px;
+    font-size: 1.125rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    box-shadow: 0 3rem 5rem -3rem var(--very-dark-desaturated-blue-alpha);
+}
+
+.user {
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+
+.avatar {
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.user__avatar {
+    margin-bottom: 1em;
+}
+
+.user__age {
+    margin-left: .2em;
+}
+
+.user__address {
+    font-size: 0.8em;
+    margin-top: 0.75em;
+}
+
+.stats {
+    display: flex;
+    border-top: 1px solid var(--dark-gray-alpha);
+    padding: 1.6em 1.3em 1.4em;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 1.3em;
+}
+
+.stat-item__name {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0.66em;
+}
+
+.txt-gray {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution__link {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 575px) {
+    .page {
+        background-position: calc(50% - 245px) -260px, calc(50% + 245px) 375px;
+        background-size: 489px 489px, 489px 489px;
+    }
+
+    .stat-item {
+        padding: 0 1.2em;
+    }
+}
