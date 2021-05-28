@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position: calc(50% - 489px) -520px, calc(50% + 489px) 375px;
+    background-position: calc(50% - 489px) -520px, calc(50% + 489px) calc(100% + 633px);
     background-repeat: no-repeat, no-repeat;
     height: 100vh;
     overflow: hidden;
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 575px) {
     .page {
-        background-position: calc(50% - 245px) -260px, calc(50% + 245px) 375px;
+        background-position: calc(50% - 245px) -260px, calc(50% + 245px) calc(100% + 175px);
         background-size: 489px 489px, 489px 489px;
     }
 
